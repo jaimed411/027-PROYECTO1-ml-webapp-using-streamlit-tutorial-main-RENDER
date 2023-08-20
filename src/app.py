@@ -79,7 +79,7 @@ def main():
             
             # Mostrar gráfico interactivo en la primera columna
             fig = px.line(deaths_info, x='Date', y='Dead', title='Deaths Over Time')
-            fig.update_traces(mode='lines+markers', marker=dict(color='blue'))  # Cambiar el color de los puntos a azul
+            fig.update_traces(mode='lines+markers', marker=dict(color='#ff4733'))  # Cambiar el color de los puntos a azul
             col1.plotly_chart(fig, use_container_width=True)  # Utilizar el ancho de la columna
             
             # Mostrar tabla en la segunda columna
@@ -107,5 +107,3 @@ def main():
     
 if __name__ == '__main__':
     main()
-
-
